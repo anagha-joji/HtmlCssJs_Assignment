@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="C:\Users\Achu\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Visual Studio Code\Employee Registration Form\style.css">
+    <title>Registration Form</title>
+    <script src="C:\Users\Achu\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Visual Studio Code\Employee Registration Form\validation.js"></script>
+    <script src="C:\Users\Achu\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Visual Studio Code\Employee Registration Form\EmailPasswordcheck.js">
+    </script>
+
+
+</head>
+
+<body>
+    <h1>Employee Registration Form</h1>
+    <div>
+        <form name="regform" method="post" onsubmit="validateForm()">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Enter First Name">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Enter Last Name">
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" onblur="checkEmail()" onfocus="this.value=''  ">
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" onblur="validatePassword()" onfocus="this.value='' ">
+
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat">
+            <label for="age">Age</label>
+            <input type="text" id="age" name="Age" placeholder="Enter your Age">
+            <label>Gender</label><br/>
+            <input type="radio" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" value="female">
+            <label for="female">Female</label><br/>
+            <label for="skillset">SkillSet</label>
+            <select id="skillset" name="skillset">
+                <option value="communication">Communication</option>
+                <option value="management">Management</option>
+                <option value="sftdevlop">Software Development</option>
+                <option value="analytics">Analytics</option>
+                <option value="finance">Finance</option>
+            </select>
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="usa">USA</option>
+                <option value="india">India</option>
+                <option value="japan">Japan</option>
+            </select>
+            <input type="submit" value="Submit">
+
+
+        </form>
+    </div>
+</body>
+
+</html>
